@@ -1,4 +1,5 @@
 from traversal.preorder import *
+from traversal.inorder import *
 from bst import BST
 bst=BST()
 
@@ -19,8 +20,22 @@ bst.add(6)
 bst.add(15)
 bst.add(25)
 print('bst added')
+## tree construction over
+
+
+# traversal begins
 pre(bst.root)
 print()
 preiter(bst.root)
 print()
 preiter_opt(bst.root)
+print()
+print('pre order over')
+
+#preorder over
+
+ino(bst.root)
+print()
+inoiter(bst.root)
+print()
+print('inorder over')
