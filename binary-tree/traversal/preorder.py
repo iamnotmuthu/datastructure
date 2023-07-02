@@ -8,8 +8,7 @@ def pre(root):
 
 def preiter(root):
     stack=[]
-    stack.append(root)
-    while(stack):
+    while(stack or root):
         if root:
             stack.append(root)
             print(root, end ='   ')
