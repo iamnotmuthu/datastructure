@@ -6,8 +6,7 @@ def pre(root):
     pre(root.left)
     pre(root.right)
 
-def preiter(root2):
-    root=root2
+def preiter(root):
     stack=[]
     stack.append(root)
     while(stack):
@@ -18,3 +17,19 @@ def preiter(root2):
         else:
             root=stack.pop()
             root=root.right
+
+
+def preiter_opt(root):
+    if not root:
+        return
+    stack =[]
+    stack.append(root)
+    while(stack):
+        if root:
+            print(root, end='   ')
+            if root.right is not None:
+                stack.append(root.right)
+            root=root.left
+        else:
+            root=stack.pop()
+            
