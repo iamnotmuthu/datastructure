@@ -6,15 +6,15 @@ def pre(root):
     pre(root.left)
     pre(root.right)
 
-def preiter(root):
+def preiter(root2):
+    root=root2
     stack=[]
     stack.append(root)
-    while(stack or root):
+    while(stack):
         if root:
             stack.append(root)
-            print('adding',root)
+            print(root, end ='   ')
             root=root.left
         else:
             root=stack.pop()
-            print('removing',root)
             root=root.right
