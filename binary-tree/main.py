@@ -2,6 +2,7 @@ from traversal.preorder import *
 from traversal.inorder import *
 from traversal.postorder import *
 from traversal.bfs import *
+from traversal.vertical import *
 from bst import BST
 bst=BST()
 
@@ -9,7 +10,7 @@ bst=BST()
 '''
                10
           5            20 
-      2     6     15    25
+      2     6     15        25
 
 
 '''
@@ -49,3 +50,7 @@ print()
 print('post order over')
 
 bfs(bst.root)
+print()
+print('bfs over')
+
+vert(bst.root)
