@@ -3,6 +3,7 @@ from traversal.inorder import *
 from traversal.postorder import *
 from traversal.bfs import *
 from traversal.vertical import *
+from traversal.zigzag import *
 from bst import BST
 bst=BST()
 
@@ -54,3 +55,6 @@ print()
 print('bfs over')
 
 vert(bst.root)
+print()
+print('vertical over')
+zz(bst.root)
