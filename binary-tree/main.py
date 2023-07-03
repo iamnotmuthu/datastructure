@@ -1,5 +1,6 @@
 from traversal.preorder import *
 from traversal.inorder import *
+from traversal.postorder import *
 from bst import BST
 bst=BST()
 
@@ -39,3 +40,7 @@ print()
 inoiter(bst.root)
 print()
 print('inorder over')
+
+post(bst.root)
+print()
+postiter(bst.root)
