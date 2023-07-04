@@ -1,3 +1,5 @@
+import copy
+
 from traversal.preorder import *
 from traversal.inorder import *
 from traversal.postorder import *
@@ -9,6 +11,8 @@ from traversal.boundary import *
 
 from analysis.height import *
 from analysis.size import *
+
+from validation.identical import *
 
 from bst import BST
 bst=BST()
@@ -75,10 +79,20 @@ print('diagnol over')
 
 boundry(bst.root)
 print()
-print('traersal over')
+print('traversal over')
 print()
 print()
 
 
+print('analysis starts')
 print('size is ',size(bst.root))
 print('height is ',h(bst.root))
+print('analysis over')
+print()
+print()
+
+print('validation starts')
+bst2=copy.deepcopy(bst)
+bst2.root.left.left.val=9
+print('is identical tree ', is_identical(bst.root,bst2.root))
+
