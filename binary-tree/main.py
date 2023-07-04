@@ -12,7 +12,7 @@ from traversal.boundary import *
 from analysis.height import *
 from analysis.size import *
 
-from validation.identical import *
+from validation.validations import *
 
 from bst import BST
 bst=BST()
@@ -96,3 +96,19 @@ bst2=copy.deepcopy(bst)
 bst2.root.left.left.val=9
 print('is identical tree ', is_identical(bst.root,bst2.root))
 
+mst=BST()
+
+mst.add(2)
+mst.add(1)
+mst.add(3)
+
+mst2=BST()
+
+mst2.add(2)
+mst2.add(1)
+mst2.add(3)
+
+mst2.root.left.val=3
+mst2.root.right.val=1
+
+print('is mirror', is_mirror(mst.root,mst2.root))
