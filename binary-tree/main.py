@@ -6,6 +6,10 @@ from traversal.vertical import *
 from traversal.zigzag import *
 from traversal.diagnol import *
 from traversal.boundary import *
+
+from analysis.height import *
+from analysis.size import *
+
 from bst import BST
 bst=BST()
 
@@ -70,3 +74,11 @@ print()
 print('diagnol over')
 
 boundry(bst.root)
+print()
+print('traersal over')
+print()
+print()
+
+
+print('size is ',size(bst.root))
+print('height is ',h(bst.root))
