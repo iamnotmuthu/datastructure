@@ -5,6 +5,7 @@ from traversal.bfs import *
 from traversal.vertical import *
 from traversal.zigzag import *
 from traversal.diagnol import *
+from traversal.boundary import *
 from bst import BST
 bst=BST()
 
@@ -24,6 +25,7 @@ bst.add(2)
 bst.add(6)
 bst.add(15)
 bst.add(25)
+bst.add(7)
 print('bst added')
 ## tree construction over
 
@@ -64,3 +66,7 @@ print()
 print('zigzag over')
 
 diag(bst.root)
+print()
+print('diagnol over')
+
+boundry(bst.root)
