@@ -113,5 +113,7 @@ mst2.root.right.val=1
 
 print('is mirror', is_mirror(mst.root,mst2.root))
 
-print('isbst',isbst(bst.root,0,100))
-print('isbst',isbst(mst2.root,0,100))
+print('isbst',is_bst(bst.root,0,100))
+print('isbst',is_bst(mst2.root,0,100))
+
+print('is_sub_tree',is_sub_tree(bst.root,bst.root))
