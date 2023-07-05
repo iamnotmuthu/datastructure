@@ -112,3 +112,6 @@ mst2.root.left.val=3
 mst2.root.right.val=1
 
 print('is mirror', is_mirror(mst.root,mst2.root))
+
+print('isbst',isbst(bst.root,0,100))
+print('isbst',isbst(mst2.root,0,100))
