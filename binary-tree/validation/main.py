@@ -10,6 +10,7 @@ from validation.is_identical import *
 from validation.is_mirror import *
 from validation.is_subtree import *
 from validation.is_childsum_parent import *
+from validation.is_height_balanced import *
 
 def start_validation(root):
     print('validation starts')
@@ -48,3 +49,10 @@ def start_validation(root):
     print(cbst.root, cbst.root.left, cbst.root.right)
     print()
     print('is_childsum parent', is_child_sum(cbst.root))
+
+    bbst=BST()
+    bbst.add(1)
+    bbst.add(2)
+    bbst.add(3)
+    print('balanced tree',is_balanced(root))
+    print('balanced tree',is_balanced(bbst.root))
