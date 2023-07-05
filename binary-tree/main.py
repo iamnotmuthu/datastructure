@@ -2,8 +2,7 @@ import copy
 
 from traversal.main import start_traversal
 from extraction.main import start_analysis
-
-from validation.main import *
+from validation.main import start_validation
 
 from bst import BST
 bst=BST()

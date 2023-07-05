@@ -9,7 +9,7 @@ from validation.is_bst import *
 from validation.is_identical import *
 from validation.is_mirror import *
 from validation.is_subtree import *
-
+from validation.is_childsum_parent import *
 
 def start_validation(root):
     print('validation starts')
@@ -39,3 +39,12 @@ def start_validation(root):
     print()
     print('is_sub_tree',is_sub_tree(root,root))
     print('is_sub_tree',is_sub_tree(root,root2))
+
+    cbst=BST()
+    cbst.add(10)
+    cbst.add(20)
+    cbst.add(6)
+    cbst.root.right.val=4
+    print(cbst.root, cbst.root.left, cbst.root.right)
+    print()
+    print('is_childsum parent', is_child_sum(cbst.root))
