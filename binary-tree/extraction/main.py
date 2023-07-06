@@ -4,6 +4,7 @@ from extraction.diameter import *
 from extraction.largest_level import *
 from extraction.lowest_com_ancestor import *
 from extraction.kthlevelnodes import *
+from extraction.maxpathsum import *
 def start_analysis(root):
     print('\n\n')
     
@@ -17,6 +18,8 @@ def start_analysis(root):
     print('lowest parent',lowest_anc(root,5,7))
     print('kth level')
     kthlevel(root,1,0)
+    print()
+    print('maxpathsum',maxpathsum(root))
     print('analysis over')
     print()
     print()
