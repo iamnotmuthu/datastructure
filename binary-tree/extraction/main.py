@@ -6,6 +6,7 @@ from extraction.lowest_com_ancestor import *
 from extraction.kthlevelnodes import *
 from extraction.maxpathsum import *
 from extraction.topview import *
+from extraction.leftview import *
 
 
 def start_analysis(root):
@@ -23,8 +24,11 @@ def start_analysis(root):
     kthlevel(root,1,0)
     print()
     print('maxpathsum',maxpathsum(root))
-    print('top view',topview(root))
-
+    print('top view')
+    topview(root)
+    print('top viw over')
+    print('left view')
+    leftview(root)
 
     print('analysis over')
     print()
