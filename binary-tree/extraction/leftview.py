@@ -10,7 +10,7 @@ def left(root,l,dict):
         return
     key= dict.get(l)
     if not key:
-        print(root)
+        print(root, end='   ')
     dict[l]=root
     left(root.left,l+1,dict)
     left(root.right,l+1,dict)

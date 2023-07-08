@@ -7,7 +7,7 @@ from extraction.kthlevelnodes import *
 from extraction.maxpathsum import *
 from extraction.topview import *
 from extraction.leftview import *
-
+from extraction.rightview import *
 
 def start_analysis(root):
     print('\n\n')
@@ -26,10 +26,14 @@ def start_analysis(root):
     print('maxpathsum',maxpathsum(root))
     print('top view')
     topview(root)
+    print()
     print('top viw over')
     print('left view')
     leftview(root)
-
+    print()
+    print('right view')
+    rightview(root)
+    print()
     print('analysis over')
     print()
     print()
