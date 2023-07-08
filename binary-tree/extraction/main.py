@@ -8,6 +8,7 @@ from extraction.maxpathsum import *
 from extraction.topview import *
 from extraction.leftview import *
 from extraction.rightview import *
+from extraction.maxdepth import *
 
 def start_analysis(root):
     print('\n\n')
@@ -34,6 +35,8 @@ def start_analysis(root):
     print('right view')
     rightview(root)
     print()
+    print('depth is ',depth(root))
+    print()
     print('analysis over')
     print()
-    print()
+    
