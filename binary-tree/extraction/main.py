@@ -9,6 +9,7 @@ from extraction.topview import *
 from extraction.leftview import *
 from extraction.rightview import *
 from extraction.maxdepth import *
+from extraction.kthsmallestval import *
 
 def start_analysis(root):
     print('\n\n')
@@ -37,6 +38,8 @@ def start_analysis(root):
     print()
     print('depth is ',depth(root))
     print()
+    print('kth smallest')
+    print(kthsmall(root))
     print('analysis over')
     print()
     
