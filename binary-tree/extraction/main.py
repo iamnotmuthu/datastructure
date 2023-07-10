@@ -10,6 +10,14 @@ from extraction.leftview import *
 from extraction.rightview import *
 from extraction.maxdepth import *
 from extraction.kthsmallestval import *
+from extraction.delleaf import *
+from traversal.preorder import *
+
+import sys
+import os
+sys.path.insert(0, os.path.abspath('../'))
+
+from bst import BST
 
 def start_analysis(root):
     print('\n\n')
@@ -39,7 +47,15 @@ def start_analysis(root):
     print('depth is ',depth(root))
     print()
     print('kth smallest')
-    print(kthsmall(root))
+    print(kthsmall(root,2))
+    print()
+    bstx=BST()
+    bstx.add(22)
+    bstx.add(34)
+    bstx.add(35)
+    print('delleaf',delleaf(bstx.root))
+    pre(bstx.root)
+    
     print('analysis over')
     print()
     
