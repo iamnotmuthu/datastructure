@@ -12,6 +12,7 @@ from extraction.maxdepth import *
 from extraction.kthsmallestval import *
 from extraction.delleaf import *
 from traversal.preorder import *
+from extraction.root2leafsum import *
 
 import sys
 import os
@@ -55,6 +56,9 @@ def start_analysis(root):
     bstx.add(35)
     print('delleaf',delleaf(bstx.root))
     pre(bstx.root)
+    print()
+    print('all root 2 leaf sum')
+    root2leafsum(root,0)
     
     print('analysis over')
     print()
