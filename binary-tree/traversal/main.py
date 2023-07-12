@@ -9,6 +9,7 @@ from traversal.vertical import *
 from traversal.zigzag import *
 from traversal.diagnol import *
 from traversal.boundary import *
+from traversal.ino_suc import *
 
 
 
@@ -78,6 +79,9 @@ def start_traversal(root):
     print()
     print('boundry traversal over' )
     print()
+
+    print('ino_suc',ino_suc(root,5))
+
     print('all traversal over')
     
 
